@@ -5,18 +5,18 @@ import { faShoppingBasket } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between p-4 text-white h-28">
+    <header className="flex items-center justify-between p-4  h-28">
       <div>
         <img src={Logo} className='w-30 h-30 sm:w-40 sm:h-40 ml-4 sm:ml-40 hover:scale-114 transition-transform duration-200' alt="" />
       </div>
   <nav className='hidden sm:block'>
         <ul className='flex space-x-4 text-lg font-bold mr-40'>
-          <li className='m-4 p-6 text-2xl hover:scale-124 transition-transform duration-200'>Home</li>
-          <li className='m-4 p-6 text-2xl hover:scale-124 transition-transform duration-200'>About</li>
-          <li className='m-4 p-6 text-2xl hover:scale-124 transition-transform duration-200'>Login</li>
-          <li className='m-4 p-6 text-2xl hover:scale-124 transition-transform duration-200'>Cart <span><FontAwesomeIcon icon={faShoppingBasket} /></span></li>
+          <li className='m-4 p-6 text-2xl hover:scale-124  hover:text-red-500 transition-transform duration-200 transition-colors'>Home</li>
+          <li className='m-4 p-6 text-2xl hover:scale-124  transition-transform duration-200 hover:text-red-500 transition-colors'>About</li>
+          <li className='m-4 p-6 text-2xl hover:scale-124  transition-transform duration-200 hover:text-red-500 transition-colors'>Login</li>
+          <li className='m-4 p-6 text-2xl hover:scale-124  transition-transform duration-200 hover:text-red-500 transition-colors'>Cart <span className='hover:text-yellow-500'><FontAwesomeIcon icon={faShoppingBasket} /></span></li>
         </ul>
-      </nav>
+      </nav> 
     </header>
   );
 };
