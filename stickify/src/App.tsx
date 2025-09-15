@@ -10,7 +10,7 @@ function App() {
     <>
       <div className="text-white">
         <Header />
-        <Intro />
+        <Intro title="Stickify!"/>
         <Footer />
       </div>
     </>
