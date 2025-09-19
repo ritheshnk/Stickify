@@ -1,6 +1,7 @@
 // Props in TSX
 type Props = {
     title: string 
+    
 }
 
 export default function Intro({title}: Props ) {

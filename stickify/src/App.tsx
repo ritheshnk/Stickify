@@ -3,6 +3,7 @@ import './index.css'
 import Header from './componets/Header'
 import Footer from './componets/Footer'
 import Intro from './componets/Intro'
+import ProductList from './componets/ProductLists'
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <div className="text-white">
         <Header />
         <Intro title="Stickify!"/>
+        <ProductList />
         <Footer />
       </div>
     </>
