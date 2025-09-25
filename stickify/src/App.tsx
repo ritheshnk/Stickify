@@ -1,19 +1,19 @@
 import './App.css'
 import './index.css'
-import Header from './componets/Header'
-import Footer from './componets/Footer'
-import Intro from './componets/Intro'
-import ProductList from './componets/ProductLists'
+import Main from './componets/main'
+import { BrowserRouter} from 'react-router-dom';
 
 
 function App() {
   return(
     <>
+
       <div className="text-white">
-        <Header />
-        <Intro title="Stickify!"/>
-        <ProductList />
-        <Footer />
+       <BrowserRouter>
+        <Main />
+       </BrowserRouter>
+          
+        
       </div>
     </>
   )

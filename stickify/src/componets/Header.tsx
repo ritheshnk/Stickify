@@ -1,6 +1,7 @@
 import Logo from '../assets/stickyOffcLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingBasket } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -11,10 +12,10 @@ const Header = () => {
       </div>
   <nav className='hidden sm:block'>
         <ul className='flex space-x-4 text-lg font-bold mr-40'>
-          <li className='m-4 p-6 text-2xl hover:scale-124  hover:text-red-500 transition-transform duration-200 transition-colors'>Home</li>
-          <li className='m-4 p-6 text-2xl hover:scale-124  transition-transform duration-200 hover:text-red-500 transition-colors'>About</li>
-          <li className='m-4 p-6 text-2xl hover:scale-124  transition-transform duration-200 hover:text-red-500 transition-colors'>Login</li>
-          <li className='m-4 p-6 text-2xl hover:scale-124  transition-transform duration-200 hover:text-red-500 transition-colors'>Cart <span className='hover:text-yellow-500'><FontAwesomeIcon icon={faShoppingBasket} /></span></li>
+          <li className='m-4 p-6 text-2xl hover:scale-124  hover:text-red-500 transition-transform duration-200 transition-colors'><Link to="/">Home</Link></li>
+          <li className='m-4 p-6 text-2xl hover:scale-124  transition-transform duration-200 hover:text-red-500 transition-colors' ><Link to="/about">About</Link></li>
+          <li className='m-4 p-6 text-2xl hover:scale-124  transition-transform duration-200 hover:text-red-500 transition-colors'><Link to="/product">Products</Link></li>
+          <li className='m-4 p-6 text-2xl hover:scale-124  transition-transform duration-200 hover:text-red-500 transition-colors'><Link to= "/cart">Cart <span className='hover:text-yellow-500'><FontAwesomeIcon icon={faShoppingBasket} /></span></Link></li>
         </ul>
       </nav> 
     </header>
