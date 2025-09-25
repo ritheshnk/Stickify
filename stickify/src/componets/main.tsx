@@ -6,6 +6,7 @@ import ProductList from './ProductLists'
 import { BrowserRouter} from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import About from "./About";
+import Animation from './Animation';
 
 function Main() {
   return(
@@ -14,13 +15,14 @@ function Main() {
       <div className="text-white flex flex-col min-h-screen">
         
              <Header />
+             
                 <main className='flex-grow'>
                     <Intro title="Stickify!" />
 
              <Routes>
                 <Route 
                     path="/" 
-                    element = {<></>} />
+                    element = {<><Animation /></>} />
                 
                 <Route 
                     path="/about" 
